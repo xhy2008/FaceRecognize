@@ -1,0 +1,9 @@
+CASIA-WebFace/
+Cleaned_CASIA_FaceV5/
+lfw/
+venv/
+C++/libtorch/*
+C++/opencv/*
+C++/build
+*.png
+*.pth
