@@ -1,6 +1,6 @@
 # Face Recognition System
 
-基于 PyTorch 的人脸识别系统，支持多种模型架构。
+基于 PyTorch 的人脸识别系统，使用CNN和VIT。
 
 ## 项目结构
 
@@ -36,7 +36,7 @@ facerecognize/
 
 ## 环境依赖
 
-- Python 3.10.11
+- Python 3.10
 - PyTorch
 - OpenCV
 - torchvision
@@ -69,14 +69,13 @@ python train.py
 python lfw_eval.py
 ```
 
-## 预训练模型
+## 预训练模型（在Release中下载)
 
 - `best_model.pth` - FaceNet 最佳模型
 - `best_model_origin.pth` - 原始ConvNet模型
 - `best_vit_model.pth` - ViT 最佳模型
 - `mobilefacenet.ckpt` - MobileFaceNet 模型
 - `mobilefacenet_finetuned.ckpt` - MobileFaceNet 微调模型
-- `facenet_model.pt` - FaceNet 模型的TorchScript版本
 
 ## C++示例编译教程
 - 安装cmake和一个C++编译器，我使用的是VS
@@ -86,4 +85,4 @@ python lfw_eval.py
 
 ## 数据集
 
-项目使用 CASIA FaceV5 数据集进行训练，评估采用 LFW (Labeled Faces in the Wild) 数据集。
+项目使用 CASIA FaceV5 数据集进行训练，评估采用 LFW 数据集。
